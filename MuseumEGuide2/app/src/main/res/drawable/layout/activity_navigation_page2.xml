@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@drawable/nnavpage2"
+    android:screenOrientation="landscape"
+    tools:context="com.example.abhishek.emuseumguide.NavigationPage2">
+
+<ImageButton
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:id="@+id/imgBtnBuilding2"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:src="@drawable/building2" />
+
+<ImageButton
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:id="@+id/imgBtnBuilding1"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:src="@drawable/building1" />
+
+<ImageButton
+    android:layout_width="50dp"
+    android:layout_height="100dp"
+    android:id="@+id/imgBtnGate"
+    android:layout_centerVertical="true"
+    android:layout_alignParentStart="true"
+    android:background="@drawable/entrancebtn" />
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:id="@+id/imgViewStart"
+    android:src="@drawable/uarehere"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true" />
+
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="100dp"
+    android:id="@+id/imgViewEnd"
+    android:src="@drawable/entarrowd"
+    android:layout_alignTop="@+id/imgBtnGate"
+    android:layout_toEndOf="@+id/imgBtnGate"
+    android:layout_marginTop="49dp" />
+</RelativeLayout>

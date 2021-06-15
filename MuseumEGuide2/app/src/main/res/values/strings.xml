@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MuseumEGuide</string>
+    <string name="select_language">Select Language</string>
+    <string-array name="array_language_name">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Japanese</item>
+    </string-array>
+</resources>

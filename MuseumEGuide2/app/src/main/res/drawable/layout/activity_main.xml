@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="horizontal"
+    android:background="@drawable/front_pag"
+    tools:context="com.example.abhishek.emuseumguide.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:orientation="vertical"
+            android:weightSum="5"
+            android:paddingLeft="50dp"
+            android:paddingTop="80dp"
+            android:paddingBottom="30dp"
+            android:paddingRight="50dp">
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/img_btn_gallery"
+                android:background="@drawable/gallery" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img_btn_beacon"
+                android:layout_weight="1"
+                android:background="@drawable/becon_btn" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/img_btn_qr"
+                android:background="@drawable/qr_btn" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/img_btn_navigation"
+                android:background="@drawable/navigation" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/img_btn_tour"
+                android:background="@drawable/tour" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_btn_back"
+                android:layout_marginLeft="220dp"
+                android:background="@android:drawable/ic_menu_revert"
+                android:layout_alignParentTop="true"
+                android:layout_toStartOf="@+id/img_btn_extra" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_btn_extra"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/dott_ibtn"
+                android:layout_alignBottom="@+id/img_btn_back"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="10dp" />
+
+        </RelativeLayout>
+
+
+</LinearLayout>

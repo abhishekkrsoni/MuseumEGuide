@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abhishek.museumeguide">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/museum_blink"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MenuActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".QRActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".HelpDesk"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".History"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AboutUs"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Setting"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".GalleryActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".DetailActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".BeaconActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".NavigationActivity1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".InsideBuilding1"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".NavigationPage2"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".NavigationPage3Final"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".InsideBuilding2"
+            android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>

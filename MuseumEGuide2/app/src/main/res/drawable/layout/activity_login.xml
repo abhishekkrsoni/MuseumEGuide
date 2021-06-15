@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/login_back_page"
+tools:context="com.example.abhishek.emuseumguide.Login"
+android:paddingTop="70dp"
+android:gravity="center">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email (xyz@gmail.com)"
+            android:id="@+id/etname"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password (8 chars minimum)"
+            android:id="@+id/etpass"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SELECT LANGUAGE"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/ttcat"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="5dp"
+                android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/spinner_lang"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/ttcat"
+                android:textColor="@color/colorWhite"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btlogin"
+            android:textColor="@color/colorWhite"
+            android:text="LOG IN"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Do not have Account, SignUp..! Here"
+            android:id="@+id/ttsignup"
+            android:gravity="center"
+            android:onClick="OnSignup"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>
